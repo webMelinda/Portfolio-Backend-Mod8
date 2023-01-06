@@ -5,8 +5,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
 import java.util.Date;
 
 @Entity
@@ -17,10 +15,6 @@ public class Proyecto {
     private String foto;
     private String url;
     private String nombre;
-    @Temporal(TemporalType.DATE)
-    private Date inicio;
-    @Temporal(TemporalType.DATE)
-    private Date fin;
     private String descripcion;
 
     public Proyecto() {
@@ -30,8 +24,6 @@ public class Proyecto {
         this.foto = foto;
         this.url = url;
         this.nombre = nombre;
-        this.inicio = inicio;
-        this.fin = fin;
         this.descripcion = descripcion;
     }
 
@@ -65,22 +57,6 @@ public class Proyecto {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    public Date getInicio() {
-        return inicio;
-    }
-
-    public void setInicio(Date inicio) {
-        this.inicio = inicio;
-    }
-
-    public Date getFin() {
-        return fin;
-    }
-
-    public void setFin(Date fin) {
-        this.fin = fin;
     }
 
     public String getDescripcion() {

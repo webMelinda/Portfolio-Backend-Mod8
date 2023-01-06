@@ -22,9 +22,6 @@ public class Persona {
     
     private String apellido;
     
-    private String titulo;
-    
-    private String banner_img;
     
     private String perfil_img;
     
@@ -46,8 +43,6 @@ public class Persona {
         this.nombre = nombre;
         this.second_name = second_name;
         this.apellido = apellido;
-        this.titulo = titulo;
-        this.banner_img = banner_img;
         this.perfil_img = perfil_img;
         this.about = about;
         this.edad = edad;
@@ -85,22 +80,6 @@ public class Persona {
 
     public void setApellido(String apellido) {
         this.apellido = apellido;
-    }
-
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
-    public String getBanner_img() {
-        return banner_img;
-    }
-
-    public void setBanner_img(String banner_img) {
-        this.banner_img = banner_img;
     }
 
     public String getPerfil_img() {

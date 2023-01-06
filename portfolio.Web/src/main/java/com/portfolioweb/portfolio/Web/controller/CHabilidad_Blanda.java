@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("blanda") 
+@RequestMapping("soft") 
 @CrossOrigin(origins = "http://localhost:4200")
 public class CHabilidad_Blanda {
      @Autowired
