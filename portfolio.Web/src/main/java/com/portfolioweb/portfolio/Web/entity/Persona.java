@@ -32,14 +32,17 @@ public class Persona {
     
     private String residencia;
     
+    private String cv;
+    
     private String email;
+    
+    private String clave;
     
 
     public Persona() {
     }
 
-    public Persona(int id, String nombre, String second_name, String apellido, String titulo, String banner_img, String perfil_img, String about, int edad, String residencia, String email) {
-        this.id = id;
+    public Persona(String nombre, String second_name, String apellido, String perfil_img, String about, int edad, String residencia, String cv, String email, String clave) {
         this.nombre = nombre;
         this.second_name = second_name;
         this.apellido = apellido;
@@ -47,7 +50,9 @@ public class Persona {
         this.about = about;
         this.edad = edad;
         this.residencia = residencia;
+        this.cv = cv;
         this.email = email;
+        this.clave = clave;
     }
 
     public int getId() {
@@ -114,6 +119,14 @@ public class Persona {
         this.residencia = residencia;
     }
 
+    public String getCv() {
+        return cv;
+    }
+
+    public void setCv(String cv) {
+        this.cv = cv;
+    }
+
     public String getEmail() {
         return email;
     }
@@ -122,6 +135,17 @@ public class Persona {
         this.email = email;
     }
 
+    public String getClave() {
+        return clave;
+    }
+
+    public void setClave(String clave) {
+        this.clave = clave;
+    }
+
+   
+
+   
     
     
     

@@ -39,4 +39,12 @@ public class SPersona {
      public void editarPersona(Persona perso) {
         persoRepo.save(perso);
      }
+     
+     public Persona loginPersona(String email, String clave){
+         List<Persona> perso = persoRepo.findByEmailAndClave(email, clave);
+         if(!perso.isEmpty()){
+             return perso.get(0);
+         }
+         return null;
+     }
 }

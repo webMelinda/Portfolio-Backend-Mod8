@@ -52,4 +52,9 @@ public class CPersona {
     public void updatePersona(@RequestBody Persona pers){
         persoServ.editarPersona(pers);
     }
+    
+    @PostMapping ("/autenticacion/login")
+    public Persona loginUsuario(@RequestBody Persona pers){
+        return persoServ.loginPersona(pers.getEmail(), pers.getClave());
+    }
 }
